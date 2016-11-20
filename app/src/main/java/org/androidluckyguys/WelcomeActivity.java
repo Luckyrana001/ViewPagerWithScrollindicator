@@ -31,6 +31,7 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE);
 
         // Making notification bar transparent
         if (Build.VERSION.SDK_INT >= 21) {
